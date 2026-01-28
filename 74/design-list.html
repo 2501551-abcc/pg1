@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ネイルのデザインを見る</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/design-list.css" />
+        <script defer src="js/script.js" type="text/javascript" charset="utf-8"></script>
+        <script defer src="js/design-list.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body id="list-body">
+        <div id="design-list">
+            <h1>Design-List</h1>
+        </div>
+        <div id="search-div">
+            <form onsubmit="return false;">
+                <img src="img/icon/search.png">
+                <input type="text" id="search-input">
+                <button id="search-button">検索</button>
+            </form>
+            
+        </div>
+        <div id="display-area">   <!--保存したネイルデザインを一覧で表示する-->
+            
+        </div>
+
+        <nav id="all-nav">
+            <!-- マイページ（ログインや登録）、デザインリスト、デザイン登録、自分のネイル用品を見る-->
+            <ul>
+                <li><a href="design-list.html"><img src="img/icon/nail-list.png" id="nav-list-img" class="nav-img"><small>Designs</small></a></li>
+                <li><a href="add-design.html"><img src="img/icon/add-nail.png" id="nav-add-img" class="nav-img"><small>Register</small></a></li>
+                <li><a href="nail-closet.html"><img src="img/icon/gelnail.png" id="nav-nail-img" class="nav-img"><small>Collection</small></a></li>
+                <li><a href="mypage.html"><img src="img/icon/mypage.png" id="nav-mypage-img" class="nav-img"><small>Mypage</small></a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

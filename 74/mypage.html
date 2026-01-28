@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mypage.css" />
+     <script defer src="js/mypage.js" type="text/javascript" charset="utf-8"></script>
+    <script defer src="js/anime.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div id="mypage-all-div">
+        <div id="mypage-profile">
+            <img src="img/icon/sheep.png" id="userimg">
+            <h3 id="username">ユーザーネーム</h3>
+        </div>
+        <div id="favorite-design">
+            <p id="tabcontrol">
+                <a href="#tabpage1">いいね！した投稿</a>
+                <a href="#tabpage2">あなたの投稿</a>
+            </p>
+            <div id="tabbody">
+                <div id="tabpage1"></div>
+                <div id="tabpage2"></div>
+            </div>
+        </div>
+        <div id="logout-container">
+            <button type="button" id="logout-button">Logout</button>
+        </div>
+    </div>
+    <nav id="all-nav">
+            <!-- マイページ（ログインや登録）、デザインリスト、デザイン登録、自分のネイル用品を見る-->
+            <ul>
+                <li><a href="design-list.html"><img src="img/icon/nail-list.png" id="nav-list-img" class="nav-img"><small>Designs</small></a></li>
+                <li><a href="add-design.html"><img src="img/icon/add-nail.png" id="nav-add-img" class="nav-img"><small>Register</small></a></li>
+                <li><a href="nail-closet.html"><img src="img/icon/gelnail.png" id="nav-nail-img" class="nav-img"><small>Collection</small></a></li>
+                <li><a href="mypage.html"><img src="img/icon/mypage.png" id="nav-mypage-img" class="nav-img"><small>Mypage</small></a></li>
+            </ul>
+        </nav>
+</body>
+</html>

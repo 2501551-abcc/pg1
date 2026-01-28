@@ -1,0 +1,133 @@
+html {
+    scroll-padding-top: 160px;
+    scroll-behavior: smooth; 
+}
+
+/* 全体のコンテナ */
+#add-body{
+    background-color: #ebe9e3;
+}
+
+#add-fixed-div{
+    position: fixed;
+    top: 0px;
+    padding: 10px;
+    background-color: #ebe9e3;
+    z-index: 2;
+}
+
+#add-title{
+    margin: 10px 20px 5px 20px;
+    color: #aa7871;
+}
+
+.add-form {
+    max-width: 600px;
+    margin: 150px auto 40px auto;
+    padding: 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+}
+
+.add-content-div{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.add-content-div .content-title-label{
+    display: block;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #b19494;
+    border-left: 4px solid #DB9E9A;
+}
+
+#image-preview {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+    object-fit: contain;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 8px;
+}
+
+form label {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 5px;
+    transition: background 0.2s;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #f8bbd0; 
+}
+
+.add-keywords-div,.keywords-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.share-button-div{
+    margin: 0 auto 100px auto;
+    text-align: center;
+}
+
+#share-button{
+    padding: 8px 20px;
+    background-color: #DB9E9A;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+}
+
+#photo-name-form{
+    display: flex;
+}
+
+/* ▼タブ */
+#tabcontrol{
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#tabcontrol a {
+    display: inline-block;           
+    border-width: 1px 1px 0px 1px;    
+    border-style: solid;          
+    border-color: #DB9E9A;
+    border-radius: 0.75em 0.75em 0 0; 
+    padding: 0.75em 1em;         
+    text-decoration: none;        
+    background-color: white;   
+    font-weight: bold;               
+    position: relative;        
+}
+
+#tabcontrol a img{
+    width: 20px;
+}
+
+#tabbody div {
+    margin-top: -1px;    
+    padding: 1em;        
+    background-color: white;
+    position: relative;      
+    z-index: 0;    
+}
+
+/* [参考]https://allabout.co.jp/gm/gc/23969/ */

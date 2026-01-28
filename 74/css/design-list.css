@@ -1,0 +1,89 @@
+/* This is a CSS file */
+
+#list-body{
+    background-color: #ebe9e3;
+    margin: 0;
+    padding: 0;
+}
+
+#design-list{
+    margin: 10px 20px 5px 20px;
+    color: #aa7871;
+}
+
+#search-div{
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    background-color: #f5f3ec;
+    border: 1px solid #aa7871;
+    padding: none;
+}
+
+#search-div form {
+    background-color: #f5f3ec;
+    display: flex;
+    flex-grow: 1;
+}
+
+#search-input{
+    width: 80%;
+    border: none;
+    background-color: #f5f3ec;
+}
+
+#search-div img{
+    margin: 5px 0 0 5px;
+    width: 20px;
+    height: 20px;
+}
+
+#search-button{
+    width: 50px;
+    background-color: #f5f3ec;
+    border: 1px solid #aa7871;
+}
+
+
+#display-area{
+    margin: 10px 15px 90px 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+}
+
+
+.design-display{
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    width: 160px;
+    background-color: #f8f6f1;
+    border-radius: 15px 15px 10px 10px;
+    border: 1px solid #b49964;
+}
+
+
+.design-display img{
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+}
+
+.explain-div{
+    margin: 5px 5px 3px 7px;
+    width: 100%;
+}
+
+.explain-div h4{
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+
+.explain-div p{
+    margin: 3px 0 0 0;
+    padding: 0;
+    font-size: 12px;
+    text-align: right;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/login.js" type="text/javascript" charset="utf-8"></script>
+<body id="login-body">
+    <div class="return-div">
+        <a href="index.html"><img src="img/icon/return.png"></a>
+    </div>
+    <div login-area>
+        <div id="login-title">
+            <img src="img/icon/nail-lady2.png">
+            <h1>Login</h1>
+        </div>
+        <div id="login-form">
+            <form itemref="login-id" class="login-input-form" onsubmit="return false;">
+                <label for="userid">UserID or Email</label>
+                <input type="text" name="login" id="userid" class="login-input" placeholder="Enter your name">
+            </form>
+
+            <form id="login-pass-form" class="login-input-form" onsubmit="return false;">
+                <label for="pass">Password</label>
+                <input type="password" name="login" id="pass" class="login-input" placeholder="enter password">
+            </form>
+
+            <button type="button" id="login-decide-button">Login</button>
+
+        </div>
+    </div>
+</body>
+</html>

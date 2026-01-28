@@ -1,0 +1,80 @@
+/* This is a CSS file */
+
+.detail-title-div{
+    position: relative;
+    z-index: 2;
+}
+
+.detail-title-div img{
+    margin-top: -80px;
+    width: 100%;
+    z-index: 1;
+}
+
+.detail-explain-div {
+    margin: 0;
+    position: absolute; top: 100px;
+    width: 100%;
+    text-align: center;
+    background-color: #fffdfe;
+    border-radius: 15px 15px 0 0;
+    z-index: 3;
+}
+
+.like-div{
+    position: absolute;
+    right: 10px;
+    margin-top: 30px;
+    width: 40px;
+    background-color: #DB9E9A;
+}
+
+.detail-content-div{
+    margin: 0;
+    position: absolute; top: 190px;
+    width: 100%;
+    background-color: #fffdfe;
+    z-index: 2;
+}
+
+#theme-div{
+    display: flex;
+    margin-left: 40px;
+}
+
+#theme-div h6{
+    margin-right: 20px;
+    display: inline-block;
+    padding: 5px;
+    background-color: #f8ecf0;
+    border-radius: 5px;
+}
+
+.detail-content-div ul{
+    margin-top: 90px;
+    padding: 0;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.detail-content-div ul li{
+    position: relative;
+    margin: 12px 25px;
+    padding: 0;
+    display: flex; 
+    flex-direction: column;
+    list-style: none;
+}
+
+.detail-content-div li img{
+    margin-bottom: 20px;
+    width: 30px;
+}
+
+.color::after { 
+    content: "■"; 
+    color: pink; 
+    margin-left: 4px;
+    font-size: 1em; 
+}

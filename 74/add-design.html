@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ネイルのデザインを追加</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/add-design.css" />
+        <script defer src="js/add-design.js" type="text/javascript" charset="utf-8"></script>
+        <script defer src="anime.js" type="text/javascript" charset="utf-8"></script>
+        <script defer src="js/script.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body id="add-body">
+        <div id="add-fixed-div">
+            <div id="add-title">
+                <h1>Share Your Design</h1>
+            </div>
+
+            <p id="tabcontrol">
+                <a href="#tabpage1"><img src="img/icon/photo.png"></a>
+                <a href="#tabpage2"><img src="img/icon/kirakira.png"></a>
+                <a href="#tabpage3"><img src="img/icon/palette.png"></a>
+                <a href="#tabpage4"><img src="img/icon/brush.png"></a>
+                <a href="#tabpage5"><img src="img/icon/ribon.png"></a>
+                <a href="#tabpage6"><img src="img/icon/tag.png"></a>
+            </p>
+        </div>
+
+        <div id="tabbody" class="add-form">  
+            <div class="photo-name-content-div add-content-div tabpage" id="tabpage1">
+                <label for="post-image" class="image-select-label">
+                    <img src="img/icon/default.png" id="image-preview" alt="プレビュー">
+                    <p id="preview-text">タップして画像を選択</p>
+                </label>
+                
+                <input type="file" id="post-image" accept="image/*" style="display: none;">
+                <form onsubmit="return false;" id="photo-name-form">
+                    <label>名前：</label>
+                    <label><input type="text" class="design-name" placeholder="デザインの名前"></label>
+                </form>
+            </div>
+
+            <div id="tabpage2" class="add-content-div add-theme-div tabpage">
+                <label class="content-title-label">テーマ</label>
+                <form onsubmit="return false;">
+                    <label><input type="checkbox" name="theme" value="アニメ">アニメ</label>
+                    <label><input type="checkbox" name="theme" value="オフィス">オフィス</label>
+                    <label><input type="checkbox" name="theme" value="ガーリー">ガーリー</label>
+                    <label><input type="checkbox" name="theme" value="カジュアル">カジュアル</label>
+                    <label><input type="checkbox" name="theme" value="シンプル">シンプル</label>
+                    <label><input type="checkbox" name="theme" value="ニュアンス">ニュアンス</label>
+                    <label><input type="checkbox" name="theme" value="ゆめかわ">ゆめかわ</label>
+                    <label><input type="checkbox" name="theme" value="韓国">韓国</label>
+                    <label><input type="checkbox" name="theme" value="個性的">個性的</label>
+                    <label><input type="checkbox" name="theme" value="春夏秋冬">春夏秋冬</label>
+                    <label><input type="checkbox" name="theme" value="成人式・ブライダル">成人式・ブライダル</label>
+                    <label><input type="checkbox" name="theme" value="量産型・地雷">量産型・地雷</label>
+                </form>
+            </div>
+
+            <div id="tabpage3" class="add-content-div add-color-div tabpage">
+                <label class="content-title-label">カラー</label>
+                <form onsubmit="return false;">
+                    <label><input type="checkbox" name="color" value="ピンク">ピンク</label>
+                    <label><input type="checkbox" name="color" value="赤">赤</label>
+                    <label><input type="checkbox" name="color" value="オレンジ">オレンジ</label>
+                    <label><input type="checkbox" name="color" value="茶">茶色</label>
+                    <label><input type="checkbox" name="color" value="ベージュ">ベージュ</label>
+                    <label><input type="checkbox" name="color" value="黄">黄色</label>
+                    <label><input type="checkbox" name="color" value="黄緑">黄緑</label>
+                    <label><input type="checkbox" name="color" value="緑">緑</label>
+                    <label><input type="checkbox" name="color" value="水色">水色</label>
+                    <label><input type="checkbox" name="color" value="青">青</label>
+                    <label><input type="checkbox" name="color" value="紫">紫</label>
+                    <label><input type="checkbox" name="color" value="白">白</label>
+                    <label><input type="checkbox" name="color" value="黒">黒</label>
+                    <label><input type="checkbox" name="color" value="ゴールド">ゴールド</label>
+                    <label><input type="checkbox" name="color" value="シルバー">シルバー</label>
+                </form>
+            </div>
+
+            <div id="tabpage4" class="add-content-div add-design-div tabpage">
+                <label class="content-title-label">デザイン</label>
+                <form onsubmit="return false;">
+                    <label><input type="checkbox" name="design" value="グラデーション">グラデーション</label>
+                    <label><input type="checkbox" name="design" value="シアー">シアー</label>
+                    <label><input type="checkbox" name="design" value="チーク">チーク</label>
+                    <label><input type="checkbox" name="design" value="チェック">チェック</label>
+                    <label><input type="checkbox" name="design" value="ツイード">ツイード</label>
+                    <label><input type="checkbox" name="design" value="ツヤ">ツヤ</label>
+                    <label><input type="checkbox" name="design" value="フレンチ">フレンチ</label>
+                    <label><input type="checkbox" name="design" value="ホログラム">ホログラム</label>
+                    <label><input type="checkbox" name="design" value="マグネット">マグネット</label>
+                    <label><input type="checkbox" name="design" value="マット">マット</label>
+                    <label><input type="checkbox" name="design" value="ミラー">ミラー</label>
+                    <label><input type="checkbox" name="design" value="ライン">ライン</label>
+                    <label><input type="checkbox" name="design" value="ラメ">ラメ</label>
+                    <label><input type="checkbox" name="design" value="ワンカラー">ワンカラー</label>
+                </form>
+            </div>
+
+            <div id="tabpage5" class="add-content-div add-parts-div tabpage">
+                <label class="content-title-label">パーツ</label>
+                <form onsubmit="return false;">
+                    <label><input type="checkbox" name="parts" value="3D">3D</label>
+                    <label><input type="checkbox" name="parts" value="うねうね">うねうね</label>
+                    <label><input type="checkbox" name="parts" value="スタッズ">スタッズ</label>
+                    <label><input type="checkbox" name="parts" value="ストーン">ストーン</label>
+                    <label><input type="checkbox" name="parts" value="チェーン">チェーン</label>
+                    <label><input type="checkbox" name="parts" value="チョウ">チョウ</label>
+                    <label><input type="checkbox" name="parts" value="フラワー">フラワー</label>
+                    <label><input type="checkbox" name="parts" value="パール">パール</label>
+                    <label><input type="checkbox" name="parts" value="ハート">ハート</label>
+                    <label><input type="checkbox" name="parts" value="ビジュー">ビジュー</label>
+                    <label><input type="checkbox" name="parts" value="ブリオン">ブリオン</label>
+                    <label><input type="checkbox" name="parts" value="ホイル・金箔">ホイル・金箔</label>
+                    <label><input type="checkbox" name="parts" value="リボン">リボン</label>
+                </form>
+            </div>
+
+            <div id="tabpage6" class="add-content-div add-keywords-div tabpage">
+                <label for="post-keywords" class="content-title-label">自由なキーワード</label>
+                <form onsubmit="return false;" class="keywords-form"> 
+                    <input type="text" id="post-keywords" placeholder="例：キラキラ, 夏休み, お祭り (カンマ区切り)">
+                    <p class="input-note">※キーワードを複数入れる場合はカンマ( , )で区切ってください</p>
+                </form>
+            </div>
+        </div>
+
+        <div class="share-button-div">
+           <button id="share-button">投稿する</button>
+        </div>
+
+        <nav id="all-nav">
+            <ul>
+                <li><a href="design-list.html"><img src="img/icon/nail-list.png" id="nav-list-img" class="nav-img"><small>Designs</small></a></li>
+                <li><a href="add-design.html"><img src="img/icon/add-nail.png" id="nav-add-img" class="nav-img"><small>Register</small></a></li>
+                <li><a href="nail-closet.html"><img src="img/icon/gelnail.png" id="nav-nail-img" class="nav-img"><small>Collection</small></a></li>
+                <li><a href="mypage.html"><img src="img/icon/mypage.png" id="nav-mypage-img" class="nav-img"><small>Mypage</small></a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

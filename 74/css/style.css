@@ -1,0 +1,227 @@
+/*全体的な設定を書くこと*/
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Gothic');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fffdfe;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    height: 100%;
+}
+
+#name{
+    position: fixed; bottom: 0px;
+}
+
+.return-div{
+    margin: 15px 15px;
+}
+
+.return-div img{
+    position: relative;
+    width: 40px;
+    z-index: 3;
+}
+
+
+
+/*ここにナビゲーションの設定とか書く*/
+#all-nav{
+    margin: 0;
+    padding: 0;
+    position: fixed; bottom: 0;
+    width: 100%;
+    background-color: #FFFFFE;
+    border-radius: 30px 30px 0 0;
+    border-color: #C5A777;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+}
+
+#all-nav ul{
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around; 
+    text-align: center;
+}
+
+#all-nav li {
+    padding: 3px 3px 0 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.nav-img{
+    height: 40px;
+    width: 40px;
+}
+
+#all-nav li a{
+    text-decoration: none;
+}
+
+/*ここからindexの設定*/
+#index-all-div{
+    height: 100dvh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+#title-div{
+    display: flex;
+    flex: 3;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    background-color: #f8ecf0;
+    width: 100%;
+    z-index: 1;
+}
+
+#title-div img{
+    margin-top: 20px;
+    width: 80%;
+}
+
+#title-image-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 4;
+    min-height: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#title-image-div img{
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 2;
+}
+
+#title-button-form{
+    flex: 3;
+    margin: 0 auto 0 auto;
+    text-align: center;       
+    z-index: 3;
+}
+
+.title-button{
+    margin: 12px auto;
+}
+
+.index-button{
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    border-style: none;
+    font-size: 15px;
+}
+
+.index-button a{
+   text-decoration: none;
+   color: #fffdfe;
+}
+
+#display-button{
+    background-color: #e07694;
+}
+
+#login-button{
+    background-color: #76d9e0;
+}
+
+#signup-button{
+    background-color: #94e076;
+}
+
+
+
+/*ここからlogin,new-sign-upの設定*/
+#login-body,#signup-body{
+    height: 97vh;
+}
+
+#login-body{
+    background: linear-gradient( 180deg, #ecf8f8 0%, #f0f9f8 30%, #fdffff 100%);
+}
+
+#signup-body{
+    background: linear-gradient( 180deg, #eff8ec 0%, #f3f9f0 30%, #fdfffd 100%);
+}
+
+
+#login-title,#signup-title{
+    margin: 20px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#login-title img{
+    margin: 0px 100px;
+    width: 32%;
+}
+
+#signup-title img{
+    margin: 0px 100px;
+    width: 30%;
+}
+
+#login-form{
+    margin: 10px 20px;
+}
+
+#signup-form{
+    margin: 0 20px;
+}
+
+.login-input-form{
+    margin: 10px 0 40px 0;
+}
+
+.signup-input-form{
+    margin: 0 0 10px 0;
+}
+
+.login-input,.signup-input{
+    padding: 10px 10px;
+    width: 95%;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+}
+
+#login-decide-button{
+    position: absolute; 
+    bottom: 60px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    padding: 8px 55px;
+    background-color: #76d9e0;
+    color: #fffdfe;
+    border-radius: 35px;
+    border-style: none;
+}
+
+#signup-decide-button{
+    position: absolute; 
+    bottom: 60px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    padding: 8px 55px;
+    background-color: #94e076;
+    color: #fffdfe;
+    border-radius: 35px;
+    border-style: none;
+}
+
+.login-link{
+    position: fixed;
+    bottom: 10px;
+    }

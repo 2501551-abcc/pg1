@@ -1,0 +1,118 @@
+/* This is a CSS file */
+body{
+    background-color: #ebe9e3;
+}
+
+#mypage-profile{
+    padding: 20px;
+    text-align: center;
+    background-color: 	#DB9E9A;
+}
+
+#mypage-profile img{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    background-color:   #E8E4DF;
+    border-radius: 50px;
+    border-style: 3px solid 	#C5A777;
+}
+
+#mypage-profile h3{
+    margin: 0;
+    padding: 0;
+}
+
+#logout-container{
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+#logout-button{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    padding: 8px 20px;
+    background-color: #DB9E9A;
+    border-style: none;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+
+/* ▼タブ */
+#tabcontrol{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#tabcontrol a {
+   display: inline-block;         
+   border-width: 1px 1px 0px 1px;   
+   border-style: solid;             
+   border-color: black;         
+   border-radius: 0.75em 0.75em 0 0; 
+   padding: 0.75em 1em;         
+   text-decoration: none;        
+   color: black;            
+   background-color: white;     
+   font-weight: bold;              
+   position: relative;      
+   width: 47%;
+}
+/* ▼タブにマウスポインタが載った際(任意) */
+#tabcontrol a:hover {
+   text-decoration: underline;     
+}
+
+/* ▼タブの中身 */
+#tabbody #tabpage1,#tabpage2{
+   border: 1px solid black; 
+   margin-top: -1px;      
+   padding: 1em;         
+   background-color: white;
+   position: relative; 
+   z-index: 0;          
+}
+
+/* [参考]https://allabout.co.jp/gm/gc/23969/ */
+
+
+
+.design-display{
+    margin-bottom: 10px;
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color: #f8f6f1;
+    border-radius: 15px 15px 10px 10px;
+}
+
+
+.design-display img{
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+}
+
+.explain-div{
+    margin-left: 3px;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.explain-div h4{
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+
+.explain-div p{
+    margin: 50px 10px 10px 50px;
+    padding: 0;
+    font-size: 12px;
+    text-align: right;
+}
